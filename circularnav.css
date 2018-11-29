@@ -1,0 +1,55 @@
+/* styles for navigation wrapper */
+
+.csstransforms .cn-wrapper{
+    background-color:red;
+    font-size:1em;
+    width:26em;
+    height: 26em;
+    overflow:hidden;
+    position:fixed;
+    z-index:10;
+    bottom: -13em;;
+    left:50%;
+    border-radius:50%;
+    transform:scale(0.1);
+    transition: all .3s ease;
+}
+
+/* class applied via js that will scale the navigation up */
+ .csstransforms .opened-nav {
+    border-radius: 50%;
+    transform: scale(1);
+}
+
+/* styling to position the button which will trigger the openng and closing of navigatio */
+.cn-button {
+    border:none;
+    background:none;
+    color:white;
+    text-align:center;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    height: 3.5em;
+    width: 3.5em;
+    background-color: #111;
+    position: fixed;
+    left: 50%;
+    margin-left: -1.75em;
+    bottom: -1.75em;
+    border-radius:50%;
+    cursor: pointer;
+    z-index:11;
+} 
+/* button on hover */
+.cn-button:hover,
+.cn-button:active,
+.cn-button:focus{
+    background-color: #333;
+}
+
+/* the overlay when the navigation is opened */
+.cn-overlay{
+    width:100%;
+    height:100%;
+    background-color: rgb(0,0,0,0.6);
+}
